@@ -1,0 +1,159 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo{
+
+height: 100px;
+width: auto;
+background-color:white;
+}
+
+.topo > h1{
+
+    text-align: center ;
+}
+
+.flex-container{
+    width:auto;
+    display:flex;
+    justify-content: space-around;
+
+}
+section{
+
+    margin-top:100px;
+}
+
+ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li > a{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+}
+
+li > a:hover{
+
+    background-color:blue;
+}
+
+li{
+
+    float: right;
+}
+
+.caixaFormulario{
+    position: absolute;
+    left: 39%;
+    background-color:rgba(0,0,0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width:30%;
+    color: white;
+}
+   
+
+fieldset{
+    border: 3px solid dodgerblue;
+}
+
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+
+.inputBox{
+
+    position: relative;
+}
+
+.inputUser{
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing:2px;
+}
+
+.labelInput{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.inputUser:focus ~ .labelInput,.inputUser:valid ~ .labelInput {
+    top:-20px;
+    font-size:12px;
+    color: dodgerblue;
+
+}
+
+#data_de_nascimento{
+
+    border:none;
+    padding: 8px;
+    border-radius:10px;
+    outline:none;
+    font-size: 13px;;
+
+}
+
+#submit{
+   
+    background-image: linear-gradient(to right,rgb(0,92,197), rgb(90,20,220));
+    width: 100%;
+    border:none;
+    padding: 15px;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+#submit:hover{
+
+    background-image: linear-gradient(to right,rgb(0,80,172), rgb(90,19,220));
+}
+
+footer{
+    clear: both;
+    position: relative;
+    margin-top:1000px;
+    text-align: center;
+    padding: 30px;
+    height: 100px;
+    background-color: white;
+}
